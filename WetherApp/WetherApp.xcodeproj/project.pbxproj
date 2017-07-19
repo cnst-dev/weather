@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0EF5BA1F1F86130048E2A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EF5B91F1F86130048E2A3 /* MainViewController.swift */; };
+		CF0EF5C71F1F902E0048E2A3 /* TodayWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5C51F1F902E0048E2A3 /* TodayWeather.storyboard */; };
+		CF0EF5C91F1F90490048E2A3 /* Forecast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5C81F1F90490048E2A3 /* Forecast.storyboard */; };
+		CF0EF5CF1F1F92DA0048E2A3 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5CB1F1F92DA0048E2A3 /* ProximaNova-Bold.otf */; };
+		CF0EF5D01F1F92DA0048E2A3 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5CC1F1F92DA0048E2A3 /* ProximaNova-Light.otf */; };
+		CF0EF5D11F1F92DA0048E2A3 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5CD1F1F92DA0048E2A3 /* ProximaNova-Regular.otf */; };
+		CF0EF5D21F1F92DA0048E2A3 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF0EF5CE1F1F92DA0048E2A3 /* ProximaNova-Semibold.otf */; };
+		CF0EF5D71F1F96060048E2A3 /* TodayWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EF5D61F1F96060048E2A3 /* TodayWeatherViewController.swift */; };
+		CF0EF5DC1F1F96700048E2A3 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EF5DB1F1F96700048E2A3 /* ForecastViewController.swift */; };
 		CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */; };
 		CFEC355B1F1F7DEE00B93301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEC35591F1F7DEE00B93301 /* Main.storyboard */; };
 		CFEC355D1F1F7DEE00B93301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEC355C1F1F7DEE00B93301 /* Assets.xcassets */; };
@@ -33,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0EF5B91F1F86130048E2A3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CF0EF5C61F1F902E0048E2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TodayWeather.storyboard; sourceTree = "<group>"; };
+		CF0EF5C81F1F90490048E2A3 /* Forecast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forecast.storyboard; sourceTree = "<group>"; };
+		CF0EF5CB1F1F92DA0048E2A3 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		CF0EF5CC1F1F92DA0048E2A3 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		CF0EF5CD1F1F92DA0048E2A3 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		CF0EF5CE1F1F92DA0048E2A3 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		CF0EF5D61F1F96060048E2A3 /* TodayWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayWeatherViewController.swift; sourceTree = "<group>"; };
+		CF0EF5DB1F1F96700048E2A3 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		CFEC35521F1F7DEE00B93301 /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEC355A1F1F7DEE00B93301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +90,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0EF5BB1F1F878C0048E2A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5B91F1F86130048E2A3 /* MainViewController.swift */,
+				CF0EF5BC1F1F87920048E2A3 /* SupportingFiles */,
+				CF0EF5BD1F1F87D00048E2A3 /* Resources */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		CF0EF5BC1F1F87920048E2A3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */,
+				CFEC35611F1F7DEE00B93301 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF0EF5BD1F1F87D00048E2A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5CA1F1F92BF0048E2A3 /* Fonts */,
+				CF0EF5BE1F1F87F90048E2A3 /* Storyboards */,
+				CFEC355C1F1F7DEE00B93301 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF0EF5BE1F1F87F90048E2A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFEC355E1F1F7DEE00B93301 /* LaunchScreen.storyboard */,
+				CFEC35591F1F7DEE00B93301 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF0EF5BF1F1F88260048E2A3 /* TodayWeather */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5D41F1F95800048E2A3 /* Models */,
+				CF0EF5D51F1F959E0048E2A3 /* Views */,
+				CF0EF5D31F1F95720048E2A3 /* Controllers */,
+				CF0EF5C31F1F887F0048E2A3 /* Storyboards */,
+			);
+			name = TodayWeather;
+			sourceTree = "<group>";
+		};
+		CF0EF5C01F1F88390048E2A3 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5DA1F1F964A0048E2A3 /* Models */,
+				CF0EF5D91F1F96430048E2A3 /* Views */,
+				CF0EF5D81F1F96390048E2A3 /* Controllers */,
+				CF0EF5C41F1F888B0048E2A3 /* Storyboards */,
+			);
+			name = Forecast;
+			sourceTree = "<group>";
+		};
+		CF0EF5C21F1F884C0048E2A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		CF0EF5C31F1F887F0048E2A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5C51F1F902E0048E2A3 /* TodayWeather.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF0EF5C41F1F888B0048E2A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5C81F1F90490048E2A3 /* Forecast.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF0EF5CA1F1F92BF0048E2A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5CB1F1F92DA0048E2A3 /* ProximaNova-Bold.otf */,
+				CF0EF5CC1F1F92DA0048E2A3 /* ProximaNova-Light.otf */,
+				CF0EF5CD1F1F92DA0048E2A3 /* ProximaNova-Regular.otf */,
+				CF0EF5CE1F1F92DA0048E2A3 /* ProximaNova-Semibold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		CF0EF5D31F1F95720048E2A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5D61F1F96060048E2A3 /* TodayWeatherViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CF0EF5D41F1F95800048E2A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CF0EF5D51F1F959E0048E2A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF0EF5D81F1F96390048E2A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF0EF5DB1F1F96700048E2A3 /* ForecastViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CF0EF5D91F1F96430048E2A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF0EF5DA1F1F964A0048E2A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		CFEC35491F1F7DEE00B93301 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +251,10 @@
 		CFEC35541F1F7DEE00B93301 /* WetherApp */ = {
 			isa = PBXGroup;
 			children = (
-				CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */,
-				CFEC35591F1F7DEE00B93301 /* Main.storyboard */,
-				CFEC355C1F1F7DEE00B93301 /* Assets.xcassets */,
-				CFEC355E1F1F7DEE00B93301 /* LaunchScreen.storyboard */,
-				CFEC35611F1F7DEE00B93301 /* Info.plist */,
+				CF0EF5BB1F1F878C0048E2A3 /* App */,
+				CF0EF5BF1F1F88260048E2A3 /* TodayWeather */,
+				CF0EF5C01F1F88390048E2A3 /* Forecast */,
+				CF0EF5C21F1F884C0048E2A3 /* Network */,
 			);
 			path = WetherApp;
 			sourceTree = "<group>";
@@ -234,8 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFEC35601F1F7DEE00B93301 /* LaunchScreen.storyboard in Resources */,
+				CF0EF5D21F1F92DA0048E2A3 /* ProximaNova-Semibold.otf in Resources */,
+				CF0EF5D11F1F92DA0048E2A3 /* ProximaNova-Regular.otf in Resources */,
+				CF0EF5C91F1F90490048E2A3 /* Forecast.storyboard in Resources */,
 				CFEC355D1F1F7DEE00B93301 /* Assets.xcassets in Resources */,
+				CF0EF5D01F1F92DA0048E2A3 /* ProximaNova-Light.otf in Resources */,
+				CF0EF5CF1F1F92DA0048E2A3 /* ProximaNova-Bold.otf in Resources */,
 				CFEC355B1F1F7DEE00B93301 /* Main.storyboard in Resources */,
+				CF0EF5C71F1F902E0048E2A3 /* TodayWeather.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +439,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */,
+				CF0EF5DC1F1F96700048E2A3 /* ForecastViewController.swift in Sources */,
+				CF0EF5D71F1F96060048E2A3 /* TodayWeatherViewController.swift in Sources */,
+				CF0EF5BA1F1F86130048E2A3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +477,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF0EF5C51F1F902E0048E2A3 /* TodayWeather.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF0EF5C61F1F902E0048E2A3 /* Base */,
+			);
+			name = TodayWeather.storyboard;
+			sourceTree = "<group>";
+		};
 		CFEC35591F1F7DEE00B93301 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -373,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
