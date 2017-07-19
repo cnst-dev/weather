@@ -13,7 +13,7 @@ This project is written in Swift 3 and Xcode 8.3.3.
 iPhone, iPad, iPod, iOS 9.3+
 
 ## Tools
-1. API integration - [unsplash.com](https://unsplash.com/developers)
+1. API integration - [openweathermap.org/api](http://openweathermap.org/api)
 2. Storyboards, Auto Layout  
 3. Frameworks - Foundation, UIKit
 4. CocoaPods - Alamofire
