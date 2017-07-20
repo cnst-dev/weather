@@ -9,4 +9,13 @@
 import UIKit
 
 class TodayWeatherViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        NetworkClient.shared.getWeather(lat: "35", long: "139", success: { dictionary in
+            print(dictionary)
+        }) { message in
+            print(message)
+        }
+    }
 }
