@@ -24,7 +24,7 @@ struct State {
     let country: String
     var forecast = [Weather]()
 
-    // MARK: - Init
+    // MARK: - Inits
     init(json: JSON) {
         name = json[Keys.city][Keys.name].stringValue
         country = json[Keys.city][Keys.country].stringValue

@@ -59,6 +59,7 @@ class NetworkClient {
 
     }()
 
+    // MARK: - Inits
     private init(baseURLString: String, apiKey: String) {
         self.baseURLString = baseURLString
         self.apiKey = apiKey

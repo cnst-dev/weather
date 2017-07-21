@@ -31,7 +31,7 @@ struct Weather {
     let speed: Double
     let rain: Double
 
-    // MARK: - Init
+    // MARK: - Inits
     init(json: JSON) {
         temperature = json[Keys.temp][Keys.day].doubleValue
         humidity = json[Keys.humidity].intValue

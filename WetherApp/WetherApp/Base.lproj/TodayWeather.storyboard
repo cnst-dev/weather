@@ -192,6 +192,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" image="Today" id="Y9a-TI-Sqi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="humidityLabel" destination="dhG-1B-8bF" id="h0O-dK-t4T"/>
+                        <outlet property="pressureLabel" destination="vYw-XB-bkp" id="GVL-jh-n62"/>
+                        <outlet property="rainLabel" destination="41K-VN-U6n" id="d77-r3-C7K"/>
+                        <outlet property="speedLabel" destination="2cH-Rv-fvn" id="qVp-6G-1l8"/>
+                        <outlet property="stateLabel" destination="uay-qp-XQQ" id="FJc-TJ-PYP"/>
+                        <outlet property="temperatureLabel" destination="RBS-dP-n7g" id="PA1-AU-q6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rG7-Hw-S4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
