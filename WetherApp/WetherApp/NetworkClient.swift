@@ -8,24 +8,30 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class NetworkClient {
 
     // MARK: - Nested
     private struct URLKeys {
-        static let type = "forecast"
+        static let type = "forecast/daily"
         static let latitudePrefix = "?lat="
         static let longitudePrefix = "&lon="
         static let appIDPrefix = "&appid="
+        static let daysCountPrefix = "&cnt="
+    }
+
+    private struct Keys {
+        static let baseUrl = "base_url"
+        static let api = "api_key"
     }
 
     // MARK: - Properties
     private let baseURLString: String
     private let apiKey: String
-    private let headers = ["Content-Type": "application/json"]
 
     /// A closure to call when the request is successed.
-    typealias Success = ([String: Any]) -> Void
+    typealias Success = (JSON) -> Void
     /// A closure to call when the request is failed.
     typealias Failure = ([String: Any]) -> Void
 
@@ -41,11 +47,11 @@ class NetworkClient {
                 fatalError("There should be a config dictionary")
         }
 
-        guard let urlString = dictionary["base_url"] as? String else {
+        guard let urlString = dictionary[Keys.baseUrl] as? String else {
                 fatalError("There should be a base url string")
         }
 
-        guard let apiKey = dictionary["api_key"] as? String else {
+        guard let apiKey = dictionary[Keys.api] as? String else {
                 fatalError("There should be an API key")
         }
 
@@ -75,7 +81,8 @@ class NetworkClient {
 
                 if let statusCode = response.response?.statusCode,
                     200 <= statusCode && statusCode < 300 {
-                    success(dictionary)
+                    let json = JSON(value)
+                    success(json)
                 } else {
                     failure(dictionary)
                 }
@@ -92,12 +99,12 @@ class NetworkClient {
     ///   - long: A longitude.
     ///   - success: A closure to call when the request is successed.
     ///   - failure: A closure to call when the request is failed.
-    func getWeather(lat: String, long: String, success: @escaping Success, failure: @escaping Failure) {
-        let latitudeComponent = "\(URLKeys.latitudePrefix)\(lat)"
-        let longitudeComponent = "\(URLKeys.longitudePrefix)\(long)"
+    func getWeather(lat: String, long: String, daysCount: Int = 5, success: @escaping Success, failure: @escaping Failure) {
+        let coordinateComponent = "\(URLKeys.latitudePrefix)\(lat)\(URLKeys.longitudePrefix)\(long)"
         let idComponent = "\(URLKeys.appIDPrefix)\(apiKey)"
+        let daysComponent = "\(URLKeys.daysCountPrefix)\(daysCount)"
 
-        let pathComponent = "\(URLKeys.type)\(latitudeComponent)\(longitudeComponent)\(idComponent)"
+        let pathComponent = "\(URLKeys.type)\(coordinateComponent)\(idComponent)\(daysComponent)"
 
         let url = URL(string: "\(baseURLString)\(pathComponent)")!
 
