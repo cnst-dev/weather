@@ -23,7 +23,7 @@ class TodayWeatherViewController: UIViewController {
     var viewModel: TodayWeatherViewModel! {
         didSet {
             stateLabel.text = viewModel.stateViewModel.stateDescription
-            temperatureLabel.text = viewModel.weatherViewModel.temperatureDescription
+            temperatureLabel.text = viewModel.weatherViewModel.fullDescription
             humidityLabel.text = viewModel.weatherViewModel.humidity
             rainLabel.text = viewModel.weatherViewModel.rain
             pressureLabel.text = viewModel.weatherViewModel.pressure

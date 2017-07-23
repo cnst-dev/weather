@@ -37,24 +37,33 @@ class WeatherViewModel {
     }
 
     // MARK: - Properties
+    let fullDescription: String
     let temperatureDescription: String
+    let weatherDescription: String
     let humidity: String
     let pressure: String
     let speed: String
     let rain: String
     let imageName: String
+    let day: String
 
     // MARK: - Inits
     init(weather: Weather) {
-        let temperatureString = WeatherViewModel.celciusString(temperature: weather.temperature)
+        temperatureDescription = WeatherViewModel.celciusString(temperature: weather.temperature)
+        weatherDescription = weather.condition
 
-        temperatureDescription = "\(temperatureString) | \(weather.condition)"
+        fullDescription = "\(temperatureDescription)C | \(weatherDescription)"
+
         humidity = "\(weather.humidity)%"
         pressure = WeatherViewModel.pressureString(pressure: weather.pressure)
         speed = WeatherViewModel.speedString(speed: weather.speed)
         rain = WeatherViewModel.rainString(rain: weather.rain)
 
         imageName = WeatherViewModel.imageString(for: weather.description)
+
+        let date = Date(timeIntervalSince1970: TimeInterval(weather.timestamp))
+        let dateFormatter = DateFormatter()
+        day = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: date) - 1]
     }
 }
 
@@ -66,7 +75,7 @@ extension WeatherViewModel {
     /// - Parameter temperature: A temperature String in Kelvin.
     /// - Returns: A temperature String in Celcius.
     fileprivate static func celciusString(temperature: Double) -> String {
-        return String(format: "%0.0f ºC", temperature - 273.15)
+        return String(format: "%0.0fº", temperature - 273.15)
     }
 
     /// Returns a String object of speed.

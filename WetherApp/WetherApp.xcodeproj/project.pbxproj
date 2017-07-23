@@ -25,6 +25,7 @@
 		CFE144961F2480A4008CB3D9 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */; };
 		CFE1449D1F2490AD008CB3D9 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */; };
 		CFE1449F1F24916F008CB3D9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1449E1F24916F008CB3D9 /* WeatherViewModel.swift */; };
+		CFE144A11F24CBD4008CB3D9 /* ForecastDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144A01F24CBD4008CB3D9 /* ForecastDataProvider.swift */; };
 		CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */; };
 		CFEC355B1F1F7DEE00B93301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEC35591F1F7DEE00B93301 /* Main.storyboard */; };
 		CFEC355D1F1F7DEE00B93301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEC355C1F1F7DEE00B93301 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
 		CFE1449E1F24916F008CB3D9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		CFE144A01F24CBD4008CB3D9 /* ForecastDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDataProvider.swift; sourceTree = "<group>"; };
 		CFEC35521F1F7DEE00B93301 /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEC355A1F1F7DEE00B93301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				CF0EF5DB1F1F96700048E2A3 /* ForecastViewController.swift */,
+				CFE144A01F24CBD4008CB3D9 /* ForecastDataProvider.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				CFE1449F1F24916F008CB3D9 /* WeatherViewModel.swift in Sources */,
 				CF03B19E1F20C9DB000B61FB /* NetworkClient.swift in Sources */,
 				CF0EF5DC1F1F96700048E2A3 /* ForecastViewController.swift in Sources */,
+				CFE144A11F24CBD4008CB3D9 /* ForecastDataProvider.swift in Sources */,
 				CF0EF5D71F1F96060048E2A3 /* TodayWeatherViewController.swift in Sources */,
 				CFE144931F247C64008CB3D9 /* ForecastCell.swift in Sources */,
 				CFEEF3301F22077900BE8360 /* TodayWeatherViewModel.swift in Sources */,

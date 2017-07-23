@@ -15,6 +15,7 @@ struct Weather {
     private struct Keys {
         static let temp = "temp"
         static let day = "day"
+        static let dt = "dt"
         static let humidity = "humidity"
         static let pressure = "pressure"
         static let weather = "weather"
@@ -25,6 +26,7 @@ struct Weather {
     }
 
     // MARK: - Properties
+    let timestamp: Int
     let temperature: Double
     let humidity: Int
     let condition: String
@@ -35,6 +37,7 @@ struct Weather {
 
     // MARK: - Inits
     init(json: JSON) {
+        timestamp = json[Keys.dt].intValue
         temperature = json[Keys.temp][Keys.day].doubleValue
         humidity = json[Keys.humidity].intValue
         pressure = json[Keys.pressure].doubleValue

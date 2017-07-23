@@ -12,13 +12,21 @@ class ForecastViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet private weak var stateLabel: UILabel!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var dataProvider: ForecastDataProvider!
 
     // MARK: - Properties
-    var viewModel: ForecastViewModel!
+    var viewModel: ForecastViewModel! {
+        didSet {
+            dataProvider.viewModels = viewModel.weatheViewModels
+        }
+    }
 
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+
         stateLabel.text = viewModel.stateViewModel.stateName
+        tableView.dataSource = dataProvider
     }
 }

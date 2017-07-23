@@ -17,7 +17,6 @@ class TodayWeatherViewModel {
     // MARK: - Inits
     init(state: State) {
         stateViewModel = StateViewModel(name: state.name, country: state.country)
-
         let todayWeathers = state.forecast[0]
         weatherViewModel = WeatherViewModel(weather: todayWeathers)
     }
