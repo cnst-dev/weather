@@ -11,25 +11,25 @@ import UIKit
 class TodayWeatherViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet private weak var weatherImage: UIImageView!
     @IBOutlet private weak var stateLabel: UILabel!
     @IBOutlet private weak var temperatureLabel: UILabel!
-    @IBOutlet weak var humidityLabel: UILabel!
-    @IBOutlet weak var rainLabel: UILabel!
-    @IBOutlet weak var pressureLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet private weak var humidityLabel: UILabel!
+    @IBOutlet private weak var rainLabel: UILabel!
+    @IBOutlet private  weak var pressureLabel: UILabel!
+    @IBOutlet private weak var speedLabel: UILabel!
 
     // MARK: - Properties
     var viewModel: TodayWeatherViewModel! {
         didSet {
-            stateLabel.text = viewModel.stateDescription
-            temperatureLabel.text = viewModel.temperatureDescription
-            humidityLabel.text = viewModel.humidity
-            rainLabel.text = viewModel.rain
-            pressureLabel.text = viewModel.pressure
-            speedLabel.text = viewModel.speed
+            stateLabel.text = viewModel.stateViewModel.stateDescription
+            temperatureLabel.text = viewModel.weatherViewModel.temperatureDescription
+            humidityLabel.text = viewModel.weatherViewModel.humidity
+            rainLabel.text = viewModel.weatherViewModel.rain
+            pressureLabel.text = viewModel.weatherViewModel.pressure
+            speedLabel.text = viewModel.weatherViewModel.speed
 
-            guard let image = UIImage(named: viewModel.imageName) else { return }
+            guard let image = UIImage(named: viewModel.weatherViewModel.imageName) else { return }
             weatherImage.image = image
         }
     }
