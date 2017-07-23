@@ -9,4 +9,16 @@
 import UIKit
 
 class ForecastViewController: UIViewController {
+
+    // MARK: - Outlets
+    @IBOutlet private weak var stateLabel: UILabel!
+
+    // MARK: - Properties
+    var viewModel: ForecastViewModel!
+
+    // MARK: - UIViewController
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        stateLabel.text = viewModel.stateViewModel.stateName
+    }
 }

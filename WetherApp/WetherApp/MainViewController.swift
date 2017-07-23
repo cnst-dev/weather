@@ -27,6 +27,10 @@ class MainViewController: UITabBarController {
             }
             todayViewController.viewModel = TodayWeatherViewModel(state: state)
 
+            guard let forecastViewController = self?.viewControllers?[1] as? ForecastViewController else {
+                fatalError("There should be a view controller")
+            }
+            forecastViewController.viewModel = ForecastViewModel(state: state)
         }) { message in
             print(message)
         }
