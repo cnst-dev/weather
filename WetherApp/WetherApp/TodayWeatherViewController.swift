@@ -11,6 +11,7 @@ import UIKit
 class TodayWeatherViewController: UIViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet private weak var stateLabel: UILabel!
     @IBOutlet private weak var temperatureLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
@@ -27,17 +28,9 @@ class TodayWeatherViewController: UIViewController {
             rainLabel.text = viewModel.rain
             pressureLabel.text = viewModel.pressure
             speedLabel.text = viewModel.speed
-        }
-    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        NetworkClient.shared.getWeather(lat: "35", long: "139", success: { [weak self] json in
-            let state = State(json: json)
-            self?.viewModel = TodayWeatherViewModel(state: state)
-        }) { message in
-            print(message)
+            guard let image = UIImage(named: viewModel.imageName) else { return }
+            weatherImage.image = image
         }
     }
 }

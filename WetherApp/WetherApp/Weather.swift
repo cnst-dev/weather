@@ -19,6 +19,7 @@ struct Weather {
         static let pressure = "pressure"
         static let weather = "weather"
         static let main = "main"
+        static let description = "description"
         static let speed = "speed"
         static let rain = "rain"
     }
@@ -27,6 +28,7 @@ struct Weather {
     let temperature: Double
     let humidity: Int
     let condition: String
+    let description: String
     let pressure: Double
     let speed: Double
     let rain: Double
@@ -37,6 +39,7 @@ struct Weather {
         humidity = json[Keys.humidity].intValue
         pressure = json[Keys.pressure].doubleValue
         condition = json[Keys.weather][0][Keys.main].stringValue
+        description = json[Keys.weather][0][Keys.description].stringValue
         speed = json[Keys.speed].doubleValue
         rain = json[Keys.rain].doubleValue
     }

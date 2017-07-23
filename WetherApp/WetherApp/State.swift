@@ -31,9 +31,6 @@ struct State {
 
         let objects = json[Keys.list].arrayValue
 
-        for json in objects {
-            let dayWeather = Weather(json: json)
-            forecast.append(dayWeather)
-        }
+        forecast = objects.map { Weather(json: $0) }
     }
 }

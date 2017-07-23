@@ -100,7 +100,7 @@ class NetworkClient {
     ///   - long: A longitude.
     ///   - success: A closure to call when the request is successed.
     ///   - failure: A closure to call when the request is failed.
-    func getWeather(lat: String, long: String, daysCount: Int = 5, success: @escaping Success, failure: @escaping Failure) {
+    func getWeather(lat: String, long: String, daysCount: Int = 7, success: @escaping Success, failure: @escaping Failure) {
         let coordinateComponent = "\(URLKeys.latitudePrefix)\(lat)\(URLKeys.longitudePrefix)\(long)"
         let idComponent = "\(URLKeys.appIDPrefix)\(apiKey)"
         let daysComponent = "\(URLKeys.daysCountPrefix)\(daysCount)"
