@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="24.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66E-aD-ddg">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -51,16 +51,16 @@
                                         </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="zI4-A0-UHt">
-                                        <rect key="frame" x="116.5" y="44.5" width="87" height="104.5"/>
+                                        <rect key="frame" x="116.5" y="44.5" width="87" height="102"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rlr-g8-Rbx">
-                                        <rect key="frame" x="54" y="169" width="212" height="22"/>
+                                        <rect key="frame" x="52.5" y="166.5" width="215.5" height="24.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Current" translatesAutoresizingMaskIntoConstraints="NO" id="6sq-Uf-JO0">
-                                                <rect key="frame" x="0.0" y="0.0" width="11" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="11" height="24.5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prague, Czech Republic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uay-qp-XQQ">
-                                                <rect key="frame" x="21" y="0.0" width="191" height="22"/>
+                                                <rect key="frame" x="21" y="0.0" width="194.5" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -68,16 +68,16 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 °C | Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-dP-n7g">
-                                        <rect key="frame" x="86.5" y="211" width="147" height="30"/>
+                                        <rect key="frame" x="83.5" y="211" width="153" height="34.5"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="25"/>
                                         <color key="textColor" red="0.18431372549019609" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="YNY-on-ALC">
-                                        <rect key="frame" x="159.5" y="261" width="1" height="1"/>
+                                        <rect key="frame" x="159.5" y="265.5" width="1" height="1"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mVC-Dw-NTL">
-                                        <rect key="frame" x="0.0" y="282" width="320" height="106"/>
+                                        <rect key="frame" x="0.0" y="286.5" width="320" height="104"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hna-Sf-1hx">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -117,7 +117,7 @@
                                                                 <rect key="frame" x="42.5" y="0.0" width="21" height="22"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1019 hPa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYw-XB-bkp">
-                                                                <rect key="frame" x="23.5" y="27" width="59" height="22"/>
+                                                                <rect key="frame" x="21" y="27" width="64" height="22"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -127,16 +127,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-JH-ZUv">
-                                                <rect key="frame" x="53.5" y="49" width="213" height="57"/>
+                                                <rect key="frame" x="53.5" y="49" width="213" height="55"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-80-qDB">
-                                                        <rect key="frame" x="0.0" y="10" width="106.5" height="37"/>
+                                                        <rect key="frame" x="0.0" y="7.5" width="106.5" height="40"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wind" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-MA-5MI">
-                                                                <rect key="frame" x="41" y="0.0" width="25" height="16"/>
+                                                                <rect key="frame" x="41" y="0.0" width="25" height="17.5"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 km/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cH-Rv-fvn">
-                                                                <rect key="frame" x="25.5" y="21" width="56" height="16"/>
+                                                                <rect key="frame" x="26" y="22.5" width="55" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -144,13 +144,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dfn-cW-Xf9">
-                                                        <rect key="frame" x="106.5" y="9" width="106.5" height="39"/>
+                                                        <rect key="frame" x="106.5" y="7.5" width="106.5" height="40"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="pzP-6s-0xu">
-                                                                <rect key="frame" x="45" y="0.0" width="17" height="17"/>
+                                                                <rect key="frame" x="45" y="0.0" width="17" height="17.5"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-FS-yBR">
-                                                                <rect key="frame" x="44.5" y="22" width="18" height="17"/>
+                                                                <rect key="frame" x="44" y="22.5" width="19" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -166,14 +166,17 @@
                                         </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="xDA-HF-vPp">
-                                        <rect key="frame" x="159.5" y="408" width="1" height="1"/>
+                                        <rect key="frame" x="159.5" y="410.5" width="1" height="1.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-If-yWY">
-                                        <rect key="frame" x="136.5" y="429" width="47" height="70"/>
+                                        <rect key="frame" x="136.5" y="432" width="47" height="67"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Share">
                                             <color key="titleColor" red="1" green="0.53333333333333333" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="MEh-rF-FqM" eventType="touchUpInside" id="lBW-LI-ua8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

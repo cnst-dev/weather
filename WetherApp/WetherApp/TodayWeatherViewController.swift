@@ -33,4 +33,30 @@ class TodayWeatherViewController: UIViewController {
             weatherImage.image = image
         }
     }
+
+    // MARK: - Action
+    @IBAction func shareButtonPressed(_ sender: UIButton) {
+        share()
+    }
+
+    // MARK: - Methods
+    /// Makes a screenshot from the current context.
+    ///
+    /// - Returns: A screenshot.
+    private func makeScreenShot() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(view.frame.size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return nil }
+        view.layer.render(in: context)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+        UIGraphicsEndImageContext()
+        return image
+    }
+
+    /// Presents an ActivityViewController to share a screenshot.
+    func share() {
+        guard let image = makeScreenShot() else { return }
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = view
+        present(activityViewController, animated: true, completion: nil)
+    }
 }
