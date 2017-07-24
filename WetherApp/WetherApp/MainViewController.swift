@@ -7,20 +7,32 @@
 //
 
 import UIKit
+import CoreLocation
 
-class MainViewController: UITabBarController {
+class MainViewController: UITabBarController, LocationServiceDelegate {
+
+    // MARK: - Properties
+    let locationService = LocationService()
 
     // MARK: - UITabBarController
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupViewModels()
+        locationService.delegate = self
+        locationService.requestLocation()
     }
 
-    // MARK: - Methods
+    // MARK: - LocationServiceDelegate
+    func locationDidUpdate(_ service: LocationService, location: CLLocation) {
+        setupViewModels(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+    }
+
     /// Setups view models for the root view controllers displayed by the tab bar interface.
-    func setupViewModels() {
-        NetworkClient.shared.getWeather(lat: "52.03", long: "47.8", success: { [weak self] json in
+    ///
+    /// - Parameters:
+    ///   - latitude: A latitude.
+    ///   - longitude: A longitude.x
+    func setupViewModels(latitude: Double, longitude: Double) {
+        NetworkClient.shared.getWeather(latitude: latitude, longitude: longitude, success: { [weak self] json in
             let state = State(json: json)
             guard let todayViewController = self?.viewControllers?[0] as? TodayWeatherViewController else {
                 fatalError("There should be a view controller")

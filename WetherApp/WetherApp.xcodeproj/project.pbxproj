@@ -21,6 +21,7 @@
 		CF0EF5DC1F1F96700048E2A3 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EF5DB1F1F96700048E2A3 /* ForecastViewController.swift */; };
 		CF5F10A81F2321D200C52743 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F10A71F2321D200C52743 /* MainViewController.swift */; };
 		CF70E6301F20CB550058FE61 /* ServerSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF70E62F1F20CB550058FE61 /* ServerSettings.plist */; };
+		CFD455EE1F25B80700B0EF2E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD455ED1F25B80700B0EF2E /* LocationService.swift */; };
 		CFE144931F247C64008CB3D9 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144921F247C64008CB3D9 /* ForecastCell.swift */; };
 		CFE144961F2480A4008CB3D9 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */; };
 		CFE1449D1F2490AD008CB3D9 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */; };
@@ -73,6 +74,7 @@
 		CF5DDAC70C3A395B6CE5A362 /* Pods_WetherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5F10A71F2321D200C52743 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CF70E62F1F20CB550058FE61 /* ServerSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerSettings.plist; sourceTree = "<group>"; };
+		CFD455ED1F25B80700B0EF2E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		CFE144921F247C64008CB3D9 /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
@@ -154,6 +156,8 @@
 				CFE1448B1F247A6C008CB3D9 /* Models */,
 				CFE1449A1F249080008CB3D9 /* ViewModels */,
 				CFE1448C1F247A72008CB3D9 /* Controllers */,
+				CFD455EC1F25B7D600B0EF2E /* Location */,
+				CF0EF5C21F1F884C0048E2A3 /* Network */,
 				CF0EF5BC1F1F87920048E2A3 /* SupportingFiles */,
 				CF0EF5BD1F1F87D00048E2A3 /* Resources */,
 			);
@@ -262,6 +266,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		CFD455EC1F25B7D600B0EF2E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				CFD455ED1F25B80700B0EF2E /* LocationService.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		CFE1448B1F247A6C008CB3D9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +344,6 @@
 				CF0EF5BB1F1F878C0048E2A3 /* App */,
 				CF0EF5BF1F1F88260048E2A3 /* TodayWeather */,
 				CF0EF5C01F1F88390048E2A3 /* Forecast */,
-				CF0EF5C21F1F884C0048E2A3 /* Network */,
 			);
 			path = WetherApp;
 			sourceTree = "<group>";
@@ -669,6 +680,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD455EE1F25B80700B0EF2E /* LocationService.swift in Sources */,
 				CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */,
 				CFE1449F1F24916F008CB3D9 /* WeatherViewModel.swift in Sources */,
 				CF03B19E1F20C9DB000B61FB /* NetworkClient.swift in Sources */,
