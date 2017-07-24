@@ -63,6 +63,7 @@ class WeatherViewModel {
 
         let date = Date(timeIntervalSince1970: TimeInterval(weather.timestamp))
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US")
         day = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: date) - 1]
     }
 }

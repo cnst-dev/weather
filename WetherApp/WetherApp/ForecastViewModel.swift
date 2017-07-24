@@ -12,11 +12,12 @@ class ForecastViewModel {
 
     // MARK: - Properties
     let stateViewModel: StateViewModel!
-    var weatheViewModels = [WeatherViewModel]()
+    var weatherViewModels = [WeatherViewModel]()
 
     // MARK: - Inits
     init(state: State) {
         stateViewModel = StateViewModel(name: state.name, country: state.country)
-        weatheViewModels = state.forecast.map { WeatherViewModel(weather: $0) }
+        weatherViewModels = state.forecast.map { WeatherViewModel(weather: $0) }
+        weatherViewModels.remove(at: 0)
     }
 }

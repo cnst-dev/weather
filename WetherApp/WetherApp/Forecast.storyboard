@@ -66,17 +66,17 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-0p-CZE">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-0p-CZE">
                                                             <rect key="frame" x="8" y="0.0" width="304" height="88.5"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="8ce-JG-Uqv">
-                                                                    <rect key="frame" x="0.0" y="13.5" width="61.5" height="61.5"/>
+                                                                    <rect key="frame" x="0.0" y="13.5" width="62" height="61.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="8ce-JG-Uqv" secondAttribute="height" id="cSu-cc-2Gy"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G0P-F4-W0e">
-                                                                    <rect key="frame" x="81.5" y="21.5" width="73.5" height="46"/>
+                                                                    <rect key="frame" x="82" y="21.5" width="124.5" height="46"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-TZ-r6U">
                                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="18"/>
@@ -93,7 +93,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziL-Vl-W7j">
-                                                                    <rect key="frame" x="175" y="17" width="129" height="55"/>
+                                                                    <rect key="frame" x="226.5" y="17" width="77.5" height="55"/>
                                                                     <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="55"/>
                                                                     <color key="textColor" red="0.1843137255" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>

@@ -18,7 +18,7 @@ class ForecastViewController: UIViewController {
     // MARK: - Properties
     var viewModel: ForecastViewModel! {
         didSet {
-            dataProvider.viewModels = viewModel.weatheViewModels
+            dataProvider.viewModels = viewModel.weatherViewModels
         }
     }
 
