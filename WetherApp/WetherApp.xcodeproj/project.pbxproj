@@ -22,6 +22,8 @@
 		CF5F10A81F2321D200C52743 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F10A71F2321D200C52743 /* MainViewController.swift */; };
 		CF70E6301F20CB550058FE61 /* ServerSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF70E62F1F20CB550058FE61 /* ServerSettings.plist */; };
 		CFD455EE1F25B80700B0EF2E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD455ED1F25B80700B0EF2E /* LocationService.swift */; };
+		CFDBC8611F26FDF2001D4741 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFDBC8601F26FDF2001D4741 /* GoogleService-Info.plist */; };
+		CFDBC8631F270CE6001D4741 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBC8621F270CE6001D4741 /* FirebaseClient.swift */; };
 		CFE144931F247C64008CB3D9 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144921F247C64008CB3D9 /* ForecastCell.swift */; };
 		CFE144961F2480A4008CB3D9 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */; };
 		CFE1449D1F2490AD008CB3D9 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */; };
@@ -75,6 +77,8 @@
 		CF5F10A71F2321D200C52743 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CF70E62F1F20CB550058FE61 /* ServerSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerSettings.plist; sourceTree = "<group>"; };
 		CFD455ED1F25B80700B0EF2E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CFDBC8601F26FDF2001D4741 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFDBC8621F270CE6001D4741 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		CFE144921F247C64008CB3D9 /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		CFE144951F2480A4008CB3D9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		CFE1449C1F2490AD008CB3D9 /* StateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */,
+				CFDBC8601F26FDF2001D4741 /* GoogleService-Info.plist */,
 				CFEC35611F1F7DEE00B93301 /* Info.plist */,
 			);
 			name = SupportingFiles;
@@ -218,6 +223,7 @@
 			children = (
 				CF03B19D1F20C9DB000B61FB /* NetworkClient.swift */,
 				CF70E62F1F20CB550058FE61 /* ServerSettings.plist */,
+				CFDBC8621F270CE6001D4741 /* FirebaseClient.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -502,6 +508,7 @@
 				CFEC355D1F1F7DEE00B93301 /* Assets.xcassets in Resources */,
 				CF0EF5D01F1F92DA0048E2A3 /* ProximaNova-Light.otf in Resources */,
 				CF0EF5CF1F1F92DA0048E2A3 /* ProximaNova-Bold.otf in Resources */,
+				CFDBC8611F26FDF2001D4741 /* GoogleService-Info.plist in Resources */,
 				CFEC355B1F1F7DEE00B93301 /* Main.storyboard in Resources */,
 				CF0EF5C71F1F902E0048E2A3 /* TodayWeather.storyboard in Resources */,
 			);
@@ -682,6 +689,7 @@
 			files = (
 				CFD455EE1F25B80700B0EF2E /* LocationService.swift in Sources */,
 				CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */,
+				CFDBC8631F270CE6001D4741 /* FirebaseClient.swift in Sources */,
 				CFE1449F1F24916F008CB3D9 /* WeatherViewModel.swift in Sources */,
 				CF03B19E1F20C9DB000B61FB /* NetworkClient.swift in Sources */,
 				CF0EF5DC1F1F96700048E2A3 /* ForecastViewController.swift in Sources */,

@@ -30,7 +30,6 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        locationManager.requestWhenInUseAuthorization()
     }
 
     /// Requests permission to use location services and the one-time delivery of the user’s current location.

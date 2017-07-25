@@ -37,12 +37,15 @@ class MainViewController: UITabBarController, LocationServiceDelegate {
             guard let todayViewController = self?.viewControllers?[0] as? TodayWeatherViewController else {
                 fatalError("There should be a view controller")
             }
-            todayViewController.viewModel = TodayWeatherViewModel(state: state)
-
+            if todayViewController.viewModel == nil {
+                todayViewController.viewModel = TodayWeatherViewModel(state: state)
+            }
             guard let forecastViewController = self?.viewControllers?[1] as? ForecastViewController else {
                 fatalError("There should be a view controller")
             }
-            forecastViewController.viewModel = ForecastViewModel(state: state)
+            if forecastViewController.viewModel == nil {
+                forecastViewController.viewModel = ForecastViewModel(state: state)
+            }
         }) { message in
             print(message)
         }
