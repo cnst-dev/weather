@@ -24,12 +24,18 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - SCLAlertView (0.7.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - Firebase (~> 4.0)
   - FirebaseDatabase (~> 4.0)
+  - NVActivityIndicatorView (~> 3.7)
+  - SCLAlertView (~> 0.7)
   - SwiftyJSON (~> 3.1)
 
 SPEC CHECKSUMS:
@@ -41,8 +47,10 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e606266378e68cb473a1d2f30a764657b580ed75
+PODFILE CHECKSUM: 5e92d8e7b8491668217e34f47571deacadc24ff5
 
 COCOAPODS: 1.2.0

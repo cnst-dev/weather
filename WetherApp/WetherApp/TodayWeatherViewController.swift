@@ -32,7 +32,7 @@ class TodayWeatherViewController: UIViewController {
 
             guard let image = UIImage(named: viewModel.weatherViewModel.imageName) else { return }
             weatherImage.image = image
-            print("SETUP")
+
             FirebaseClient().sendLocationInfo(
                 name: viewModel.stateViewModel.stateName,
                 temperature: viewModel.weatherViewModel.temperatureDescription)

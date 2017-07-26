@@ -88,7 +88,7 @@ class NetworkClient {
                     failure(dictionary)
                 }
             case .failure(let error):
-                print("ERROR", error.localizedDescription)
+                failure(["message": error.localizedDescription])
             }
         }
     }
