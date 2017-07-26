@@ -31,6 +31,7 @@
 		CFE1449F1F24916F008CB3D9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1449E1F24916F008CB3D9 /* WeatherViewModel.swift */; };
 		CFE144A11F24CBD4008CB3D9 /* ForecastDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE144A01F24CBD4008CB3D9 /* ForecastDataProvider.swift */; };
 		CFE6E5A71F287259000792AD /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6E5A61F287259000792AD /* WeatherTests.swift */; };
+		CFE6E5AB1F28ADD3000792AD /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6E5AA1F28ADD3000792AD /* WeatherUITests.swift */; };
 		CFEC35561F1F7DEE00B93301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */; };
 		CFEC355B1F1F7DEE00B93301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEC35591F1F7DEE00B93301 /* Main.storyboard */; };
 		CFEC355D1F1F7DEE00B93301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEC355C1F1F7DEE00B93301 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		CFE1449E1F24916F008CB3D9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		CFE144A01F24CBD4008CB3D9 /* ForecastDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDataProvider.swift; sourceTree = "<group>"; };
 		CFE6E5A61F287259000792AD /* WeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		CFE6E5AA1F28ADD3000792AD /* WeatherUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		CFEC35521F1F7DEE00B93301 /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEC35551F1F7DEE00B93301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEC355A1F1F7DEE00B93301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				CFEC35771F1F7DEE00B93301 /* Info.plist */,
+				CFE6E5AA1F28ADD3000792AD /* WeatherUITests.swift */,
 			);
 			path = WetherAppUITests;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 					CFEC35701F1F7DEE00B93301 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MMQCGLY2E8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CFEC35511F1F7DEE00B93301;
 					};
@@ -723,6 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE6E5AB1F28ADD3000792AD /* WeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,11 +937,13 @@
 			baseConfigurationReference = 681B44D3958FF6147E5AA14C /* Pods-WetherAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MMQCGLY2E8;
 				INFOPLIST_FILE = WetherAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = space.constantin.WetherAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = WetherApp;
 			};
@@ -947,6 +954,7 @@
 			baseConfigurationReference = D7982620CF9443ED66F0A13C /* Pods-WetherAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MMQCGLY2E8;
 				INFOPLIST_FILE = WetherAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
