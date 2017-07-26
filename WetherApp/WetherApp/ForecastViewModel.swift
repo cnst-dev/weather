@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ForecastViewModel {
+struct ForecastViewModel {
 
     // MARK: - Properties
     let stateViewModel: StateViewModel!

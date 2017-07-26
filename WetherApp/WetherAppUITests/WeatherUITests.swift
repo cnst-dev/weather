@@ -16,15 +16,11 @@ class WeatherUITests: XCTestCase {
         XCUIApplication().launch()
     }
 
-    func test_TodayWeatherView_SetsLabels() {
+    func test_TodayWeatherView_SetsOnStart() {
         let app = XCUIApplication()
 
-        XCTAssertTrue(app.staticTexts["100%"].exists)
-        XCTAssertTrue(app.staticTexts["San Francisco, US"].exists)
-        XCTAssertTrue(app.staticTexts["16ºC | Rain"].exists)
-        XCTAssertTrue(app.staticTexts["1021 hPa"].exists)
-        XCTAssertTrue(app.staticTexts["4 km/h"].exists)
         XCTAssertTrue(app.staticTexts["Today"].exists)
+        XCTAssertEqual(app.staticTexts.count, 8)
     }
 
     func test_ForecastView_SetsTable_WhenTabBarPressed() {
@@ -32,7 +28,6 @@ class WeatherUITests: XCTestCase {
 
         app.tabBars.buttons["Forecast"].tap()
 
-        XCTAssertTrue(app.staticTexts["San Francisco"].exists)
         XCTAssertEqual(app.tables.cells.count, 7)
     }
 }

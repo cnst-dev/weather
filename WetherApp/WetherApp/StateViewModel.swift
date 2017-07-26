@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StateViewModel {
+struct StateViewModel {
 
     // MARK: - Properties
     let stateName: String

@@ -49,6 +49,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         locationManager.requestLocation()
     }
 
+    // MARK: - CLLocationManagerDelegate
     /// Tells the delegate that new location data is available.
     ///
     /// - Parameters:

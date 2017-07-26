@@ -15,8 +15,8 @@ iPhone, iPad, iPod, iOS 9.3+
 ## Tools
 1. API integration - [openweathermap.org/api](http://openweathermap.org/api)
 2. Storyboards, Auto Layout  
-3. Frameworks - Foundation, UIKit
-4. CocoaPods - Alamofire
+3. Frameworks - Foundation, UIKit, CoreLocation
+4. CocoaPods - Alamofire, SwiftyJSON, NVActivityIndicatorView, SCLAlertView, FirebaseDatabase
 5. SwiftLint
 
 ## Author

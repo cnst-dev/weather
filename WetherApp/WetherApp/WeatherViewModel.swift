@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WeatherViewModel {
+struct WeatherViewModel {
 
     // MARK: - Nested
     fileprivate struct Keys {

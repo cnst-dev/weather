@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TodayWeatherViewModel {
+struct TodayWeatherViewModel {
 
     // MARK: - Properties
     let stateViewModel: StateViewModel!
