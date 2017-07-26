@@ -26,24 +26,24 @@ struct Weather {
     }
 
     // MARK: - Properties
-    let timestamp: Int
-    let temperature: Double
-    let humidity: Int
+    let timestamp: Int?
+    let temperature: Double?
+    let humidity: Int?
     let condition: String
     let description: String
-    let pressure: Double
-    let speed: Double
-    let rain: Double
+    let pressure: Double?
+    let speed: Double?
+    let rain: Double?
 
     // MARK: - Inits
     init(json: JSON) {
-        timestamp = json[Keys.dt].intValue
-        temperature = json[Keys.temp][Keys.day].doubleValue
-        humidity = json[Keys.humidity].intValue
-        pressure = json[Keys.pressure].doubleValue
+        timestamp = json[Keys.dt].int
+        temperature = json[Keys.temp][Keys.day].double
+        humidity = json[Keys.humidity].int
+        pressure = json[Keys.pressure].double
         condition = json[Keys.weather][0][Keys.main].stringValue
         description = json[Keys.weather][0][Keys.description].stringValue
-        speed = json[Keys.speed].doubleValue
-        rain = json[Keys.rain].doubleValue
+        speed = json[Keys.speed].double
+        rain = json[Keys.rain].double
     }
 }

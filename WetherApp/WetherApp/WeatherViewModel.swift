@@ -54,17 +54,14 @@ class WeatherViewModel {
 
         fullDescription = "\(temperatureDescription)C | \(weatherDescription)"
 
-        humidity = "\(weather.humidity)%"
+        humidity = WeatherViewModel.humidityString(humidity: weather.humidity)
         pressure = WeatherViewModel.pressureString(pressure: weather.pressure)
         speed = WeatherViewModel.speedString(speed: weather.speed)
         rain = WeatherViewModel.rainString(rain: weather.rain)
 
         imageName = WeatherViewModel.imageString(for: weather.description)
 
-        let date = Date(timeIntervalSince1970: TimeInterval(weather.timestamp))
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US")
-        day = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: date) - 1]
+        day = WeatherViewModel.dayString(timestamp: weather.timestamp)
     }
 }
 
@@ -75,23 +72,35 @@ extension WeatherViewModel {
     ///
     /// - Parameter temperature: A temperature String in Kelvin.
     /// - Returns: A temperature String in Celcius.
-    fileprivate static func celciusString(temperature: Double) -> String {
+    fileprivate static func celciusString(temperature: Double?) -> String {
+        guard let temperature = temperature else { return "-" }
         return String(format: "%0.0fº", temperature - 273.15)
     }
 
     /// Returns a String object of speed.
     ///
-    /// - Parameter speed: A temperature Double in m/s.
-    /// - Returns: A temperature String in km/h.
-    fileprivate static func speedString(speed: Double) -> String {
+    /// - Parameter speed: A speed Double in m/s.
+    /// - Returns: A speed String in km/h.
+    fileprivate static func speedString(speed: Double?) -> String {
+        guard let speed = speed else { return "-" }
         return String(format: "%0.0f km/h", speed * 3.6)
+    }
+
+    /// Returns a String object of humidity.
+    ///
+    /// - Parameter speed: A humidity Double in m/s.
+    /// - Returns: A humidity String in km/h.
+    fileprivate static func humidityString(humidity: Int?) -> String {
+        guard let humidity = humidity else { return "-" }
+        return "\(humidity)%"
     }
 
     /// Returns a String object of pressure.
     ///
     /// - Parameter pressure: A presure Double in hPa.
     /// - Returns: A presure String in hPa.
-    fileprivate static func pressureString(pressure: Double) -> String {
+    fileprivate static func pressureString(pressure: Double?) -> String {
+        guard let pressure = pressure else { return "-" }
         return String(format: "%0.0f hPa", pressure)
     }
 
@@ -99,8 +108,22 @@ extension WeatherViewModel {
     ///
     /// - Parameter rain: A rain Double in mm.
     /// - Returns: A rain String in mm.
-    fileprivate static func rainString(rain: Double) -> String {
+    fileprivate static func rainString(rain: Double?) -> String {
+        guard let rain = rain else { return "-" }
         return String(format: "%0.1f mm", rain)
+    }
+
+    /// Returns a day name.
+    ///
+    /// - Parameter rain: A rain Double in mm.
+    /// - Returns: A rain String in mm.
+    fileprivate static func dayString(timestamp: Int?) -> String {
+        guard let timestamp = timestamp else { return "-" }
+        let date = Date(timeIntervalSince1970: TimeInterval(timestamp))
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US")
+        let day = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: date) - 1]
+        return day
     }
 
     /// Returns an image name String object for a weather description.

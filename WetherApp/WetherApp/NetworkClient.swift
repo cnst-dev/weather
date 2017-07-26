@@ -108,7 +108,9 @@ class NetworkClient {
 
         let pathComponent = "\(URLKeys.type)\(coordinateComponent)\(idComponent)\(daysComponent)"
 
-        let url = URL(string: "\(baseURLString)\(pathComponent)")!
+        guard let url = URL(string: "\(baseURLString)\(pathComponent)") else {
+            fatalError("There should be an URL")
+        }
 
         request(url: url, success: { dictionary in
             success(dictionary)
