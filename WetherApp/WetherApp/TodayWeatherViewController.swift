@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseDatabase
 
 class TodayWeatherViewController: UIViewController {
 
@@ -32,10 +31,6 @@ class TodayWeatherViewController: UIViewController {
 
             guard let image = UIImage(named: viewModel.weatherViewModel.imageName) else { return }
             weatherImage.image = image
-
-            FirebaseClient().sendLocationInfo(
-                name: viewModel.stateViewModel.stateName,
-                temperature: viewModel.weatherViewModel.temperatureDescription)
         }
     }
 
